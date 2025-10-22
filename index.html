@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Aesthetic Gift by Khosi Mhayise</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Handcrafted gift hampers for birthdays, weddings, baby showers, and special occasions in South Africa" />
+  <meta name="keywords" content="Aesthetic Gift, gift hampers, handmade gifts, South Africa" />
+
+  <!-- Favicon (replace with your logo) -->
+  <link rel="icon" href="logo2.jpg" />
+  <link rel="icon" href="img/khosi logo.jpg" />
+  <link rel="icon" href="img/PHOTO-2025-10-17-11-44-35.jpg" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    :root{
+      --accent:#e31e6d;   /* primary rose */
+      --accent-2:#b77b7b; /* softer rose */
+      --muted:#f9f5f6;
+      --dark:#222;
+    }
+
+    html,body { height:100%; }
+    body{
+      font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color:var(--dark);
+      background: #fff;
+      line-height:1.6;
+      scroll-behavior:smooth;
+    }
+
+    h1,h2,h3,h4,h5,h6 { font-family: "Playfair Display", serif; color:var(--dark); }
+
+    /* Navbar */
+    .navbar {
+      background: linear-gradient(180deg, #fff 0%, var(--muted) 100%);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+    }
+    .navbar-brand { color:var(--accent-2); font-weight:700; letter-spacing:1px; font-size:1.25rem; }
+    .nav-link { color:#444; }
+    .nav-link:hover { color:var(--accent); }
+
+    /* Hero */
+    .hero {
+      background: url('logo2.jpg') center/cover no-repeat;
+      padding:110px 0;
+      position:relative;
+      color:#fff;
+    }
+    .hero::before {
+      content:"";
+      position:absolute; inset:0;
+      background: linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.45));
+      z-index:0;
+    }
+    .hero .container { position:relative; z-index:1; }
+    .hero h1 { font-size:3rem; margin-bottom:.5rem; }
+    .hero p.lead { font-size:1.125rem; max-width:720px; margin:0 auto 1.25rem; }
+
+    .btn-accent {
+      background:var(--accent);
+      color:#fff;
+      border-radius:30px;
+      padding:12px 28px;
+      border:0;
+      transition: all .18s ease;
+      box-shadow: 0 6px 18px rgba(227,30,109,0.15);
+    }
+    .btn-accent:hover { transform:translateY(-3px); background:#d01466; }
+
+    /* Sections */
+    .section {
+      padding:80px 0;
+    }
+    .section.bg-soft { background:var(--muted); }
+
+    .section-title {
+      color:var(--accent);
+      letter-spacing:.6px;
+      margin-bottom:28px;
+      font-weight:600;
+    }
+
+    /* Services */
+    .service-card { border-radius:14px; background:#fff; padding:28px; box-shadow:0 10px 30px rgba(0,0,0,0.04); transition:transform .25s ease; }
+    .service-card:hover { transform:translateY(-6px); }
+
+    /* Gallery */
+    .gallery img { width:100%; border-radius:12px; display:block; transition:transform .25s ease; }
+    .gallery img:hover { transform:scale(1.03); }
+
+    /* CEO / Founder */
+    .founder {
+      display:flex;
+      gap:28px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    .founder .photo {
+      min-width:220px;
+      max-width:280px;
+      border-radius:14px;
+      overflow:hidden;
+      box-shadow:0 12px 30px rgba(0,0,0,0.08);
+    }
+
+    /* Testimonials */
+    .testimonial {
+      background:#fff;
+      border-radius:12px;
+      padding:22px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    }
+    .testimonial .quote { font-style:italic; color:#333; }
+
+    /* Footer */
+    footer { background:#111; color:#fff; padding:50px 0; }
+    footer a { color:#fff; text-decoration:none; opacity:.9; }
+    footer a:hover { color:var(--accent); opacity:1; }
+
+    /* Responsive tweaks */
+    @media (max-width:767px){
+      .hero h1 { font-size:2rem; }
+      .founder { flex-direction:column; text-align:center; }
+      .founder .photo { margin-inline:auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Aesthetic Gift</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+        <ul class="navbar-nav align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Hampers</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#founder">CEO / Founder</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-outline-light ms-2" href="#order" style="background:var(--accent-2); color:#fff; border-radius:24px;">Order Now</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="home" class="hero">
+    <div class="container text-center">
+      <h1>Handcrafted Gift Hampers by Khosi Mhayise</h1>
+      <p class="lead">Beautifully curated boxes for birthdays, bridal showers, baby showers, anniversaries — made with love in Mkhondo, Mpumalanga.</p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="#order" class="btn btn-accent">Order Now</a>
+        <a href="#gallery" class="btn btn-outline-light" style="border-radius:30px; padding:10px 26px;">View Gallery</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-6">
+          <h2 class="section-title">Welcome to Aesthetic Gift</h2>
+          <p>Aesthetic Gift by Khosi Mhayise crafts thoughtful, elegant hampers designed to create memorable gifting moments. Every hamper is hand-selected, beautifully wrapped, and tailored to the occasion.</p>
+          <ul class="mt-3">
+            <li>Locally sourced items & artisan partnerships</li>
+            <li>Customisation available — messages, themes, dietary requests</li>
+            <li>Delivery across Mpumalanga (and beyond by request)</li>
+          </ul>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="img/hennessy gift.jpg" alt="Hampers" class="img-fluid rounded" style="max-height:340px; object-fit:cover;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES / HAMPERS -->
+  <section id="services" class="section bg-soft">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h3 class="section-title">Our Hamper Collections</h3>
+        <p class="mb-0">Explore our thoughtfully curated collections for every occasion.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="service-card h-100 text-center">
+            <div class="mb-3"><i class="fa-solid fa-birthday-cake fa-2x" style="color:var(--accent)"></i></div>
+            <h5>Birthday Hampers</h5>
+            <p class="mb-0">Personalised treats and self-care goodies to celebrate their day.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-card h-100 text-center">
+            <div class="mb-3"><i class="fa-solid fa-ring fa-2x" style="color:var(--accent)"></i></div>
+            <h5>Bridal & Wedding Boxes</h5>
+            <p class="mb-0">Luxurious, elegant gifts for brides, bridal parties and guests.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-card h-100 text-center">
+            <div class="mb-3"><i class="fa-solid fa-baby fa-2x" style="color:var(--accent)"></i></div>
+            <h5>Baby & New Arrival</h5>
+            <p class="mb-0">Soft, nurturing boxes for newborns and proud parents.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h3 class="section-title">Aesthetic Gift Gallery</h3>
+        <p class="mb-0">A peek at our recent creations — swap these placeholders with your real photos.</p>
+      </div>
+
+      <div class="row g-3 gallery">
+        <div class="col-sm-6 col-md-4"><img src="img/kids.jpg" alt="Birthday hamper" class="img-fluid"></div>
+        <div class="col-sm-6 col-md-4"><img src="img/brother.jpg" alt="Gifts" class="img-fluid"></div>
+        <div class="col-sm-6 col-md-4"><img src="img/hennessy gift.jpg" alt="Hennessy hamper" class="img-fluid"></div>
+        <div class="col-sm-6 col-md-4"><img src="img/sister.jpg" alt="Sister hamper" class="img-fluid"></div>
+        <div class="col-sm-6 col-md-4"><img src="img/PHOTO-2025-10-17-11-44-35.jpg" alt="Event hamper" class="img-fluid"></div>
+        <div class="col-sm-6 col-md-4"><img src="img/PHOTO-2025-10-17-11-44-33.jpg" alt="Gift box" class="img-fluid"></div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="#order" class="btn btn-accent">View All Hampers</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CEO / FOUNDER SECTION -->
+  <section id="founder" class="section bg-soft">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-5 text-center">
+          <div class="photo">
+            <img src="khosi.png.jpg" alt="Khosi Mhayise - Founder" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <h3 class="section-title">CEO / Founder</h3>
+          <h4 class="mb-2">Khosi Mhayise</h4>
+          <p class="mb-2">Khosi founded Aesthetic Gift from a love of thoughtful design and locally made treasures. With a background in styling and event curation, she turned her passion into a business that helps people celebrate life with beautiful, meaningful gifts.</p>
+          <p class="mb-0"><strong>Vision:</strong> To be the leading maker of handcrafted hampers that bring joy and connection to every occasion.</p>
+          <div class="mt-3">
+            <a href="https://www.tiktok.com/@khosi_mhayise" class="me-3" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://wa.me/27769130516" class="me-3" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:aestheticgift@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="section">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h3 class="section-title">Testimonials</h3>
+        <p class="mb-0">What our customers say — real moments of joy.</p>
+      </div>
+
+      <div id="testiCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="testimonial text-center">
+                  <p class="quote mb-3">"Absolutely beautiful hamper — the attention to detail was incredible. We gifted it to our mom and she cried tears of joy."</p>
+                  <p class="mb-0"><strong>- Lerato & Family</strong></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="testimonial text-center">
+                  <p class="quote mb-3">"Fast delivery and the packaging looked like a work of art. Highly recommended for special events."</p>
+                  <p class="mb-0"><strong>- Sipho M.</strong></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="testimonial text-center">
+                  <p class="quote mb-3">"We ordered 10 guest favors for our wedding — guests loved them! Khosi was helpful and responsive throughout."</p>
+                  <p class="mb-0"><strong>- The Nkosi Wedding</strong></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#testiCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testiCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORDER / RSVP FORM -->
+  <section id="order" class="section bg-soft">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h3 class="section-title">Place Your Order</h3>
+        <p class="mb-0">Tell us what you need and we'll craft it beautifully.</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <form action="#" method="POST" class="p-4 bg-white rounded shadow-sm">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">First name</label>
+                <input type="text" name="firstName" class="form-control" placeholder="First name" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Last name</label>
+                <input type="text" name="lastName" class="form-control" placeholder="Last name" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Phone (WhatsApp)</label>
+                <input type="tel" name="phone" class="form-control" placeholder="076 913 0516" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Email</label>
+                <input type="email" name="email" class="form-control" placeholder="you@example.com" required>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Occasion</label>
+                <select name="occasion" class="form-select" required>
+                  <option value="">Select occasion</option>
+                  <option>Birthday</option>
+                  <option>Wedding / Bridal Shower</option>
+                  <option>Baby Shower</option>
+                  <option>Anniversary</option>
+                  <option>Just Because</option>
+                  <option>Corporate Gift</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Special requests</label>
+                <textarea name="message" rows="4" class="form-control" placeholder="Tell us your vision..."></textarea>
+              </div>
+              <div class="col-12 text-center">
+                <button class="btn btn-accent" type="submit">Submit Order</button>
+              </div>
+            </div>
+          </form>
+
+          <div class="row text-center mt-4 g-3">
+            <div class="col-md-4">
+              <div class="p-3 bg-white rounded shadow-sm">
+                <h6 class="mb-1">Call or WhatsApp</h6>
+                <a href="https://wa.me/27769130516" class="d-block">076 913 0516</a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="p-3 bg-white rounded shadow-sm">
+                <h6 class="mb-1">Based in</h6>
+                <p class="mb-0">Mkhondo, Mpumalanga</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="p-3 bg-white rounded shadow-sm">
+                <h6 class="mb-1">Follow us</h6>
+                <a href="https://www.tiktok.com/@khosi_mhayise" target="_blank">@khosi_mhayise</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-4">
+          <h5 style="color:var(--accent)">Aesthetic Gift</h5>
+          <p style="color:#bbb">Handcrafted hampers that celebrate life’s precious moments — each box designed with care and love.</p>
+        </div>
+        <div class="col-md-4">
+          <h6>Contact</h6>
+          <p class="mb-1"><i class="fa-solid fa-phone me-2"></i> <a href="https://wa.me/27769130516">076 913 0516</a></p>
+          <p class="mb-1"><i class="fa-solid fa-envelope me-2"></i> <a href="mailto:aestheticgift@gmail.com">aestheticgift@gmail.com</a></p>
+          <p class="mb-0"><i class="fa-brands fa-tiktok me-2"></i> <a href="https://www.tiktok.com/@khosi_mhayise" target="_blank">@khosi_mhayise</a></p>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <h6>Legal</h6>
+          <p class="mb-1"><a href="#">Privacy</a></p>
+          <p class="mb-0"><a href="#">Terms</a></p>
+        </div>
+      </div>
+
+      <div class="text-center mt-4" style="color:#999">
+        <small>&copy; 2025 Aesthetic Gift by Khosi Mhayise — Designed by Mr_Coka_Sir</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOOTSTRAP JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Optional: small JS to hide navbar on scroll down / show on up (keeps UX neat) -->
+  <script>
+    (function(){
+      let lastScroll = 0;
+      const nav = document.querySelector('.navbar');
+      window.addEventListener('scroll', () => {
+        const current = window.pageYOffset;
+        if (current > lastScroll && current > 80) {
+          nav.style.transform = 'translateY(-100%)';
+          nav.style.transition = 'transform .25s ease';
+        } else {
+          nav.style.transform = '';
+        }
+        lastScroll = current;
+      });
+    })();
+  </script>
+</body>
+</html>
+
